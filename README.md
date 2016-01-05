@@ -1,4 +1,4 @@
-# extjs-socketioprovider
+# Ext.direct.SocketIoProvider
 Very simple and elegant Socket.io provider for Ext.Direct.
 
 # Requirements
