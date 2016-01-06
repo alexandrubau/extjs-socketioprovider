@@ -8,7 +8,7 @@ Very simple and elegant Socket.io provider for Ext.Direct.
 
 Just add the provider as you normally would with Ext.Direct:
 
-```
+```javascript
 Ext.direct.Manager.addProvider({
     id          : 'providerid',
     type        : 'socketio',
@@ -41,7 +41,7 @@ The provider automatically connects to the Socket.io server using the supplied *
 
 Start your Socket.io server and listen for event:
 
-```
+```javascript
 socket.on('Location.add', function(req, res){
 
     console.log(req.data.name); // Romania
@@ -83,9 +83,11 @@ socket.on('Location.read', function(req, res){
 
 Can be called from anywhere:
 
-```
+```javascript
 Socket.Location.add({name: 'Romania'}, function(result){
+
     // console.log(result);
+
 });
 ```
 
@@ -93,15 +95,18 @@ Socket.Location.add({name: 'Romania'}, function(result){
 
 Model definition:
 
-```
+```javascript
 Ext.define('Location', {
+
     extend: 'Ext.data.Model',
+
     fields: [
         {
             name: 'name',
             type: 'string'
         }
     ],
+
     proxy: {
         type: 'direct',
         api : {
@@ -113,10 +118,13 @@ Ext.define('Location', {
 
 Store definition:
 
-```
+```javascript
 Ext.define('Locations', {
+
     extend: 'Ext.data.Store',
+
     alias: 'store.locations',
+
     model: 'Location'
 });
 
@@ -126,9 +134,11 @@ Ext.define('Locations', {
 
 After adding the provider, you can bind to Socket.io events like so:
 
-```
+```javascript
 var socket = Ext.direct.Manager.getProvider('providerid').getSocket();
+
 socket.on('connect_error', function(){ // code });
+
 socket.on('error', function(){ // code });
 ```
 
