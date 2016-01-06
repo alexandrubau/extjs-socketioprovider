@@ -4,7 +4,7 @@ Ext.define('Ext.direct.SocketIoProvider', {
 
     alias   : 'direct.socketioprovider',
 
-    type    : 'socket.io',
+    type    : 'socketio',
 
     enableBuffer: false,
 

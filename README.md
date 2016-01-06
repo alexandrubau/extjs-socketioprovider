@@ -11,7 +11,7 @@ Just add the provider as you normally would with Ext.Direct:
 ```
 Ext.direct.Manager.addProvider({
     id          : 'providerid',
-    type        : 'socket.io',
+    type        : 'socketio',
     url         : 'localhost:8080',
     namespace   : 'Socket',
     opts        : {
