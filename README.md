@@ -84,7 +84,7 @@ socket.on('Location.read', function(req, res){
 Can be called from anywhere:
 
 ```
-Socket.Location.read({name: 'Romania'}, function(result){
+Socket.Location.add({name: 'Romania'}, function(result){
     // console.log(result);
 });
 ```
