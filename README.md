@@ -39,7 +39,7 @@ The provider automatically connects to the Socket.io server using the supplied *
 
 # Examples
 
-Start your Socket.io server and listen for event:
+Start your Socket.io server and listen for events:
 
 ```javascript
 socket.on('Location.add', function(req, res){
@@ -150,5 +150,5 @@ Be aware Socket.io's connection multiplex feature. Socket.io uses the same conne
 
 # Docs
 
-- [Socket.io docs](http://socket.io/docs/)
+- [Socket.io](http://socket.io/docs/)
 - [Ext.direct](http://docs.sencha.com/extjs/6.0/backend_connectors/direct/specification.html)
