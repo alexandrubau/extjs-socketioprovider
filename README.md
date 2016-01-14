@@ -4,6 +4,13 @@ Very simple and elegant Socket.io provider for Ext.Direct.
 # Requirements
 - ExtJS 6.0+ (may work with older)
 
+# Installation
+```javascript
+npm install extjs-socketioprovider
+```
+
+Be sure to add the script in your `app.json` file to be included in your build process.
+
 # Usage
 
 Just add the provider as you normally would with Ext.Direct:

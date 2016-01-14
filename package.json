@@ -1,0 +1,29 @@
+{
+  "name": "extjs-socketioprovider",
+  "version": "0.1.2",
+  "description": "Very simple and elegant Socket.io provider for Ext.Direct.",
+  "main": "SocketIoProvider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrubau/extjs-socketioprovider.git"
+  },
+  "keywords": [
+    "socket.io",
+    "socketio",
+    "extjs",
+    "ext js",
+    "direct",
+    "ext.direct",
+    "socket",
+    "sockets"
+  ],
+  "author": "Alexandru Bau",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/alexandrubau/extjs-socketioprovider/issues"
+  },
+  "homepage": "https://github.com/alexandrubau/extjs-socketioprovider#readme"
+}
